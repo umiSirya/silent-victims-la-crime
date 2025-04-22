@@ -31,7 +31,15 @@ const Index = () => {
       
       <section className="pt-32 pb-16 px-4 md:px-8">
         <div className="container mx-auto max-w-6xl">
-          <div className="text-center mb-8">
+          <div className="flex justify-center mb-8">
+            <img 
+              src="/lovable-uploads/bcacbe82-4cf1-4d4b-a9c0-93039f079188.png" 
+              alt="Children together" 
+              className="rounded-lg shadow-lg w-full h-auto object-cover max-w-md"
+            />
+          </div>
+          
+          <div className="text-center">
             <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-primary">
               Silent Victims: Analyzing Child-Targeted Crimes in Los Angeles
             </h1>
@@ -55,14 +63,6 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-          </div>
-          
-          <div className="flex justify-center">
-            <img 
-              src="/lovable-uploads/bcacbe82-4cf1-4d4b-a9c0-93039f079188.png" 
-              alt="Children together" 
-              className="rounded-lg shadow-lg w-full h-auto object-cover max-w-md"
-            />
           </div>
         </div>
       </section>
@@ -98,3 +98,4 @@ const Index = () => {
 };
 
 export default Index;
+
