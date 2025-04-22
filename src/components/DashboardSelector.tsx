@@ -1,4 +1,3 @@
-
 import { useState, useEffect } from "react";
 import { 
   Select,
@@ -68,41 +67,41 @@ export function DashboardSelector() {
     }
   };
 
-  // Handle loading the Tableau scripts
   useEffect(() => {
     if (isLoaded) {
       const dashboard = dashboards[selectedDashboard];
       loadTableauViz('dashboard-container', dashboard.embedCode);
       
-      // Handle responsive sizing
-      window.addEventListener('resize', () => {
+      const resizeObserver = new ResizeObserver(() => {
         resizeTableauViz('dashboard-container');
       });
       
-      // Initial sizing
-      setTimeout(() => {
+      const container = document.getElementById('dashboard-container');
+      if (container) {
+        resizeObserver.observe(container);
+      }
+      
+      const applyResizing = () => {
         resizeTableauViz('dashboard-container');
-      }, 1000);
+      };
+      
+      setTimeout(applyResizing, 500);
+      setTimeout(applyResizing, 1000);
+      setTimeout(applyResizing, 2000);
+      
+      return () => {
+        if (container) {
+          resizeObserver.unobserve(container);
+        }
+      };
     } else {
       setIsLoaded(true);
     }
-    
-    // Cleanup function
-    return () => {
-      window.removeEventListener('resize', () => {
-        resizeTableauViz('dashboard-container');
-      });
-    };
   }, [selectedDashboard, isLoaded]);
 
   const reloadDashboard = () => {
     const dashboard = dashboards[selectedDashboard];
     loadTableauViz('dashboard-container', dashboard.embedCode);
-    
-    // Apply responsive sizing
-    setTimeout(() => {
-      resizeTableauViz('dashboard-container');
-    }, 500);
   };
 
   return (
@@ -128,7 +127,11 @@ export function DashboardSelector() {
         </Select>
       </div>
       
-      <div id="dashboard-container" className="w-full h-[600px] md:h-[700px] lg:h-[800px] border rounded-lg overflow-hidden bg-card/50">
+      <div 
+        id="dashboard-container" 
+        className="w-full h-[600px] md:h-[700px] lg:h-[800px] border rounded-lg overflow-hidden bg-card/50"
+        style={{ position: 'relative' }}
+      >
         {/* Dashboard will be loaded here */}
       </div>
       

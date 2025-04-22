@@ -10,13 +10,27 @@ export function loadTableauViz(containerId: string, embedCode: string) {
   const container = document.getElementById(containerId);
   
   if (container) {
+    // Clear container first
+    container.innerHTML = '';
+    
     // Set the embed code
     container.innerHTML = embedCode;
+    
+    // Find the tableau placeholder and set its width to 100%
+    const placeholder = container.querySelector('.tableauPlaceholder');
+    if (placeholder) {
+      placeholder.setAttribute('style', 'position: relative; width: 100%; height: 100%; margin: 0; padding: 0;');
+    }
     
     // Create and append the script
     const scriptElement = document.createElement('script');
     scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';
     container.appendChild(scriptElement);
+    
+    // Set proper sizing once the visualization is loaded
+    setTimeout(() => {
+      resizeTableauViz(containerId);
+    }, 500);
     
     return true;
   }
@@ -31,11 +45,20 @@ export function resizeTableauViz(containerId: string) {
   const container = document.getElementById(containerId);
   if (!container) return;
   
+  // Adjust both the placeholder and the actual viz element
+  const placeholder = container.querySelector('.tableauPlaceholder');
+  if (placeholder) {
+    placeholder.setAttribute('style', 'position: relative; width: 100%; height: 100%; margin: 0; padding: 0;');
+  }
+  
   const vizElement = container.querySelector('.tableauViz');
-  if (!vizElement) return;
-  
-  const width = container.offsetWidth;
-  const height = Math.max(width * 0.75, 600); // Minimum height of 600px
-  
-  vizElement.setAttribute('style', `width: 100% !important; height: ${height}px !important;`);
+  if (vizElement) {
+    vizElement.setAttribute('style', 'width: 100% !important; height: 100% !important; margin: 0; padding: 0;');
+    
+    // Also adjust the inner iframe if it exists
+    const iframe = vizElement.querySelector('iframe');
+    if (iframe) {
+      iframe.setAttribute('style', 'width: 100% !important; height: 100% !important;');
+    }
+  }
 }
