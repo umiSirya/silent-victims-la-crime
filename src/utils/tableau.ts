@@ -31,19 +31,11 @@ export function resizeTableauViz(containerId: string) {
   const container = document.getElementById(containerId);
   if (!container) return;
   
-  const vizElement = container.getElementsByTagName('object')[0];
+  const vizElement = container.querySelector('.tableauViz');
   if (!vizElement) return;
   
   const width = container.offsetWidth;
+  const height = Math.max(width * 0.75, 600); // Minimum height of 600px
   
-  if (width > 800) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (width * 0.75) + 'px';
-  } else if (width > 500) {
-    vizElement.style.width = '100%';
-    vizElement.style.height = (width * 0.75) + 'px';
-  } else {
-    vizElement.style.width = '100%';
-    vizElement.style.height = '500px';
-  }
+  vizElement.setAttribute('style', `width: 100% !important; height: ${height}px !important;`);
 }
