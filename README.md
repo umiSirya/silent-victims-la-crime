@@ -1,6 +1,6 @@
 ### **Child_Crimes_in_LA**
 
-**URL**: [https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31](https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31)
+**URL**: [[https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31](https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31)](https://preview--silent-victims-la-crime.lovable.app/)
 
 
 
@@ -62,7 +62,7 @@ Only 27% of reported child-related crimes result in adult arrests, highlighting 
 
 ### **Dashboard**  
 A Tableau dashboard was created to visualize patterns in child-related crimes across time, locations, demographics, and methods of offense. It aims to support stakeholders in understanding where and how to intervene for better protection and policy-making.  
- *See it here:* [Lovable Project Link](https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31)
+ *See it here:* [[Lovable Project Link](https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31)](https://preview--silent-victims-la-crime.lovable.app/)
 
 
 
