@@ -2,6 +2,7 @@
 import { useState, useEffect } from "react";
 import { Sun, Moon } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { SocialPopover } from "@/components/SocialPopover";
 
 interface NavbarProps {
   toggleTheme: () => void;
@@ -34,15 +35,7 @@ export function Navbar({ toggleTheme, theme }: NavbarProps) {
         </h1>
         
         <div className="flex items-center space-x-4">
-          <a 
-            href="https://catalog.data.gov/dataset/crime-data-from-2020-to-present" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="text-sm md:text-base hover:text-primary transition-colors"
-          >
-            Dataset
-          </a>
-
+          <SocialPopover />
           <Button 
             variant="ghost" 
             size="icon" 
