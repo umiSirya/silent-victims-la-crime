@@ -8,7 +8,6 @@ import { GeoDashboard } from "@/components/GeoDashboard";
 import { KeyFindings } from "@/components/KeyFindings";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
-import { SocialPopover } from "@/components/SocialPopover"; // NEW IMPORT
 
 const Index = () => {
   const { theme, setTheme } = useTheme();
@@ -50,32 +49,19 @@ const Index = () => {
             </p>
             <div className="mt-8 flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg">
-                <a 
-                  href="https://catalog.data.gov/dataset/crime-data-from-2020-to-present"
-                  target="_blank" 
-                  rel="noopener noreferrer">
-                  Dataset
-                </a>
-              </Button>
-              <Button asChild size="lg">
-                <a
-                  href="https://www.canva.com/design/DAGlLsbvI2c/oryEE56uj6PxOjUm2SAKGw/edit?utm_content=DAGlLsbvI2c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://www.canva.com/design/DAGlLsbvI2c/oryEE56uj6PxOjUm2SAKGw/edit?utm_content=DAGlLsbvI2c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
                   View Full Report
                 </a>
               </Button>
               <Button variant="outline" size="lg" asChild>
-                <a
-                  href="https://public.tableau.com/views/final_dashboard_17452685691280/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://public.tableau.com/views/final_dashboard_17452685691280/Dashboard1?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link" 
+                   target="_blank" 
+                   rel="noopener noreferrer">
                   Open Dashboard
                 </a>
               </Button>
-              <SocialPopover />
             </div>
           </div>
         </div>
