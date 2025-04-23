@@ -1,3 +1,4 @@
+
 import { useState, useEffect } from "react";
 import { useTheme } from "@/components/ThemeProvider";
 import { Navbar } from "@/components/Navbar";
@@ -39,15 +40,14 @@ const Index = () => {
           </div>
           
           <div className="text-center">
-            <div className="flex flex-wrap gap-4 justify-center mb-8">
-              <a 
-                href="https://catalog.data.gov/dataset/crime-data-from-2020-to-present" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="text-sm md:text-base hover:text-primary transition-colors flex items-center border border-muted-foreground rounded-md px-4 py-2 bg-background"
-              >
-                Dataset
-              </a>
+            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-primary">
+              Silent Victims: Analyzing Child-Targeted Crimes in Los Angeles
+            </h1>
+            <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
+              A comprehensive analysis of crimes targeting children in Los Angeles, providing insights into patterns, 
+              trends, and potential interventions to protect our most vulnerable population.
+            </p>
+            <div className="mt-8 flex flex-wrap gap-4 justify-center">
               <Button asChild size="lg">
                 <a href="https://www.canva.com/design/DAGlLsbvI2c/oryEE56uj6PxOjUm2SAKGw/edit?utm_content=DAGlLsbvI2c&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton" 
                    target="_blank" 
@@ -63,13 +63,6 @@ const Index = () => {
                 </a>
               </Button>
             </div>
-            <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold leading-tight text-primary">
-              Silent Victims: Analyzing Child-Targeted Crimes in Los Angeles
-            </h1>
-            <p className="mt-6 text-lg text-muted-foreground max-w-2xl mx-auto">
-              A comprehensive analysis of crimes targeting children in Los Angeles, providing insights into patterns, 
-              trends, and potential interventions to protect our most vulnerable population.
-            </p>
           </div>
         </div>
       </section>
@@ -105,3 +98,4 @@ const Index = () => {
 };
 
 export default Index;
+

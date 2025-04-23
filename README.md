@@ -1,67 +1,73 @@
+# Welcome to your Lovable project
 
-### **Child_Crimes_in_LA**
+## Project info
 
+**URL**: https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31
 
-### **Introduction**  
-Crimes against children in Los Angeles are a serious concern, yet patterns often go unnoticed due to messy or incomplete data. This project aims to clean LAPD crime data from 2020–2025 and use visual analysis to uncover trends in offense types, locations, demographics, and weapons used—helping stakeholders better understand and address child-targeted crimes.
+## How can I edit this code?
 
+There are several ways of editing your application.
 
-### **Objective**  
-To analyze and visualize child-targeted crimes in Los Angeles by identifying key trends, affected groups, and geographical hotspots, with the aim of supporting data-driven policy and law enforcement strategies that improve child safety and accountability.
+**Use Lovable**
 
+Simply visit the [Lovable Project](https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31) and start prompting.
 
-### **Dataset Description**  
-The dataset used in this project was sourced from the U.S. Government’s open data portal:  
-[https://catalog.data.gov/dataset/crime-data-from-2020-to-present](https://catalog.data.gov/dataset/crime-data-from-2020-to-present)
+Changes made via Lovable will be committed automatically to this repo.
 
-This dataset includes detailed reports on crimes committed within the City of Los Angeles between 2020 and 2025, including information on crime types, victim age and gender, location, weapon used, and arrest outcomes.
+**Use your preferred IDE**
 
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-### **Key Business Questions**  
-1. Which crimes are most commonly committed against children?  
-2. What areas in LA have the highest concentration of reported child victim cases?  
-3. What is the gender distribution among victims?  
-4. Which descent group has the highest or lowest average victim age?  
-5. How has the number of reported victim cases changed from 2020 to 2025?  
-6. What are the most frequent tools of harm in child-related offenses?
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
+Follow these steps:
 
-### **Tools Used**  
-- **Jupyter Notebook** (Data cleaning and preprocessing using Python)  
-- **Tableau** (Data visualization and dashboard design)  
-- **GitHub** (Version control and project documentation)
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-### **Key Findings**
+# Step 3: Install the necessary dependencies.
+npm i
 
-**1 in 3 Reported Crimes Involve a Child Victim**  
-29% of all reported crimes in LA involve child victims, while 71% of the reported crimes involve adult victims.
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-**Age Groups Most Affected**  
-Children aged 13–17 years are the most affected, accounting for 38% of cases, followed by those aged 6–12 at 33%.
+**Edit a file directly in GitHub**
 
-**Low Arrest Rate**  
-Only 27% of reported child-related crimes result in adult arrests, highlighting a significant gap in accountability and enforcement.
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
+**Use GitHub Codespaces**
 
-### **Recommendations**  
-- Enhanced law enforcement presence and training  
-- Focused prevention programs for adolescents  
-- Accessible and anonymous reporting systems  
-- Increase patrol and intervention in crime hotspots
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
+## What technologies are used for this project?
 
-### **Dashboard**  
-A Tableau dashboard was created to visualize patterns in child-related crimes across time, locations, demographics, and methods of offense. It aims to support stakeholders in understanding where and how to intervene for better protection and policy-making.
-![Image](https://github.com/user-attachments/assets/e19edb83-88f1-4c47-910d-49cba0e4f0b5)
+This project is built with:
 
-![Image](https://github.com/user-attachments/assets/5517ec95-211a-4369-8b54-b0506eebb678)
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
+## How can I deploy this project?
 
-### **Conclusion**  
-This analysis reveals critical insights into the scale and patterns of crimes against children in Los Angeles. With more accurate data cleaning and targeted visual storytelling, the project highlights gaps in justice and protection—urging stakeholders to take strategic action in child safety, prevention, and enforcement.
+Simply open [Lovable](https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31) and click on Share -> Publish.
 
+## Can I connect a custom domain to my Lovable project?
 
-### **Author**  
-This project was completed as part of a crime data analysis exploration using public LAPD datasets. For inquiries or collaboration, please feel free to reach out through this GitHub profile.
+Yes, you can!
 
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
