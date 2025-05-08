@@ -1,6 +1,6 @@
 ### **Child_Crimes_in_LA**
 
-**URL**: [[https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31](https://lovable.dev/projects/717f311e-ceef-4f63-851b-1df16f0e9a31)](https://preview--silent-victims-la-crime.lovable.app/)
+**URL**:(https://preview--silent-victims-la-crime.lovable.app/)
 
 
 
